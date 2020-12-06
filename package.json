@@ -1,0 +1,17 @@
+{
+  "name": "cqrs-firestore-persistence",
+  "version": "0.0.0-development",
+  "main": "index.js",
+  "repository": "git@github.com:uxland/gal-file-parser.git",
+  "author": "Alex Vizcaino <avizcaino@uxland.es>",
+  "license": "ISC",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.1.1"
+  }
+}
