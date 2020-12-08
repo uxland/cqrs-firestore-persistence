@@ -1,4 +1,4 @@
-package repository
+package cfp
 
 import (
 	"cloud.google.com/go/firestore"

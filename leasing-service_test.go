@@ -1,9 +1,8 @@
-package leasing
+package cfp
 
 import (
 	"cloud.google.com/go/firestore"
 	"context"
-	cqrsfirestorepersistence "cqrs-firestore-persistence"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"log"
@@ -17,10 +16,10 @@ func TestLeasingService(t *testing.T) {
 }
 
 var _ = Describe("Leasing service test suite", func() {
-	var sut cqrsfirestorepersistence.LeasingService
+	var sut LeasingService
 	var resourceID = "my-resource"
 	var leaseDuration = time.Minute * 5
-	var lease cqrsfirestorepersistence.Lease
+	var lease Lease
 	var err error
 	var client *firestore.Client
 	const projectID = ""

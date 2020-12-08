@@ -1,4 +1,4 @@
-module cqrs-firestore-persistence
+module github.com/uxland/cqrs_firestore_persistence
 
 go 1.15
 

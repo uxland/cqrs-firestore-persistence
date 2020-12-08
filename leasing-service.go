@@ -1,4 +1,4 @@
-package leasing
+package cfp
 
 import (
 	"cloud.google.com/go/firestore"
@@ -8,7 +8,7 @@ import (
 
 const leasingCollectionName = "leasing"
 
-type Service interface {
+type LeasingService interface {
 	GetLease(resourceID string, duration time.Duration) (Lease, error)
 }
 type Lease interface {
@@ -20,7 +20,7 @@ type service struct {
 	client *firestore.Client
 }
 
-func NewService(client *firestore.Client) Service {
+func NewService(client *firestore.Client) LeasingService {
 	return &service{client: client}
 }
 
